@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'whitenoise.runserver_nostatic',  # novo
     'tarefas.apps.TarefasConfig',
+    'environs'
 ]
 
 MIDDLEWARE = [
