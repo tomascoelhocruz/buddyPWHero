@@ -1,0 +1,49 @@
+{% extends 'tarefas/baseBuddyAbroad.html' %}
+{% load static %}
+
+{% block main %}
+    <style>
+        input[type=tel], input[type=date] {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+        }
+
+
+        .goBack {
+            display: block;
+            width: 10%;
+            border: none;
+            background-color: #feaa00;
+            color: white;
+            border-radius: 10px;
+            padding: 14px 28px;
+            font-size: 15px;
+            cursor: pointer;
+            text-align: center;
+        }
+    </style>
+
+    <section>
+        <div class="containerForm card">
+            <h2 style="text-align: center">Contact Card Creation</h2>
+
+            <a href="{% url 'users:index' %}">
+                <button type="button" class="goBack"><i style="font-size: 15px" class="fas fa-chevron-left"></i> Go Back
+                </button>
+            </a>
+            <br>
+            <form id="quizz" action="" method="POST">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <input type="submit" value="Create User" class="btn btn-success">
+            </form>
+        </div>
+    </section>
+
+{% endblock %}
+

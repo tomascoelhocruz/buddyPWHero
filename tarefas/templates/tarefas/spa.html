@@ -1,0 +1,94 @@
+{% extends 'tarefas/baseBuddyAbroad.html' %}
+{% load static %}
+
+{% block main %}
+    <style>
+        button.nav-link {
+            color: black;
+        }
+
+        button.nav-link:hover {
+            color: #feaa00;
+        }
+
+        .nav-item > .active {
+            border: none;
+        }
+
+    </style>
+
+    <section style="padding-top: 60px;text-align: center;">
+        <h2>Single Page Application</h2>
+        <p>Preview Buddy Abroad Tours</p>
+    </section>
+
+    <section>
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <button class="nav-link" data-section="1">Gerês Tour</button>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link" data-section="2">Coimbra Tour</button>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link" data-section="3">Lisboa Tuk-Tuk Tour
+                </button>
+            </li>
+        </ul>
+        <section style="margin-top: 20px">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title" id="location"></h5>
+                    <h6 class="card-subtitle mb-2 text-muted" id="tag"></h6>
+                    <p class="card-text" id="description"> Click on a tour!</p>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section style="padding-top: 60px;text-align: center;">
+        <h2>Diretório de projeto</h2>
+        <img style="width: 100%;height: auto;max-width: 300px" src="{% static 'tarefas/images/redesign/bannerBAREQ.png' %}">
+    <p>Buddy Abroad Landing Page</p>
+    </section>
+
+    <script>
+
+        window.onpopstate = function (event) {
+            console.log(event.state.section);
+            showSection(event.state.section);
+        }
+
+        function showSection(section) {
+
+            fetch(`/sections/${section}`)
+                .then(response => response.text())
+                .then(text => {
+                    let splinted = text.split(":");
+                    document.querySelector('#location').innerHTML = splinted[0];
+                    document.querySelector('#tag').innerHTML = splinted[1];
+                    document.querySelector('#description').innerHTML = splinted[2];
+                });
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelectorAll('button').forEach(button => {
+                button.onclick = function () {
+                    const section = this.dataset.section;
+                    history.pushState({section: section}, "", `section${section}`);
+                    showSection(section);
+                };
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('button').click(function () {
+                $('button').removeClass("active");
+                $(this).addClass("active");
+            });
+        });
+    </script>
+{% endblock %}
+

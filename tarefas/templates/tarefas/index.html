@@ -1,0 +1,526 @@
+{% extends 'tarefas/baseBuddyAbroad.html' %}
+{% load static %}
+
+{% block main %}
+    <a name="banner"></a>
+    <section id="#banner" class="bannerSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm textBlock">
+                    <div class="banner-content">
+
+                        <h3 class="banner-uppertitle">
+                            Your personal tour guide
+                        </h3>
+
+                        <h1 class="banner-title">
+                            Upgrade your travelling experience</h1>
+
+                        <h2 class="banner-subtitle">
+                            Download the Buddy Abroad Tourist or Guide app on <a class="bannerLink"
+                                                                                 href="https://play.google.com/store/apps">Google
+                            Play</a> & <a class="bannerLink" href="https://www.apple.com/pt/">App Store</a> and travel
+                            like
+                            never before.
+                            Discover
+                            genuine, unique, and bespoke experiences or host them as a guide.
+                        </h2>
+
+                        <button type="button" class="banner-button" onclick="location.href='#about'">
+                            Find out more
+                        </button>
+
+                    </div>
+                </div>
+                <div class="col-sm imageContainer">
+                    <img class="bannerImg" src="{% static 'tarefas/images/redesign/bannerImage.svg' %}">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <a name="about"></a>
+    <section id="about">
+        <div style="text-align: center;">
+            <h2 style="font-weight: 700;">About Buddy Abroad</h2>
+            <p class="mb-5">What are we offering?</p>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-5">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-6 text-center mb-3">
+                                    <img class="aboutImage"
+                                         src="{% static 'tarefas/images/redesign/aboutIcons/iconbulb.svg' %}">
+                                </div>
+                                <div class="col-sm-6">
+                                    <h5 class="card-title">New experiences</h5>
+                                    <p class="card-text">Tired of conventional travelling?
+                                        Experience the future of guided tours and make meaningful
+                                        connections with locals on your travels.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6 mb-5">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-6 text-center mb-3">
+                                    <img class="aboutImage"
+                                         src="{% static 'tarefas/images/redesign/aboutIcons/iconcamera.svg' %}">
+                                </div>
+                                <div class="col-sm-6">
+                                    <h5 class="card-title">Numerous Tours</h5>
+                                    <p class="card-text">Choose the perfect tour from our endless selection.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-5">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-6 text-center mb-3">
+                                    <img class="aboutImage"
+                                         src="{% static 'tarefas/images/redesign/aboutIcons/iconmask.svg' %}">
+                                </div>
+                                <div class="col-sm-6">
+                                    <h5 class="card-title">Safe</h5>
+                                    <p class="card-text">Regulated group sizes for a safer Experience.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-5">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-6 text-center mb-3">
+                                    <img class="aboutImage"
+                                         src="{% static 'tarefas/images/redesign/aboutIcons/icontaylor.svg' %}">
+                                </div>
+                                <div class="col-sm-6">
+                                    <h5 class="card-title">Bespoke Adventures</h5>
+                                    <p class="card-text">Having trouble deciding between tours or want to change
+                                        something to your liking?
+                                        Try
+                                        our
+                                        personalized tour system.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-5">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-6 text-center mb-3">
+                                    <img class="aboutImage"
+                                         src="{% static 'tarefas/images/redesign/aboutIcons/iconfriends.svg' %}">
+                                </div>
+                                <div class="col-sm-6">
+                                    <h5 class="card-title">Meaningful Connections</h5>
+                                    <p class="card-text">Connect with local guides as they show you around and who
+                                        knows? Maybe you'll
+                                        make a
+                                        Buddy
+                                        Abroad.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-5">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-6 text-center mb-3">
+                                    <img class="aboutImage"
+                                         src="{% static 'tarefas/images/redesign/aboutIcons/iconmoney.svg' %}">
+                                </div>
+                                <div class="col-sm-6">
+                                    <h5 class="card-title">Be Rewarded</h5>
+                                    <p class="card-text"> Sign up as a local and make extra money showcasing your city.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <a name="tutorial"></a>
+    <section id="tutorial">
+        <div style="text-align: center;">
+            <h2 style="font-weight: 700;">Tutorial</h2>
+            <p class="mb-5">Find out how to get the most of the Buddy Abroad app
+            </p>
+        </div>
+        <p style="text-align: center;">Swipe me <i style="color: #ffcc7c;margin-left: 20px;"
+                                                   class="fas fa-chevron-right"></i>
+            <i style="color: #f9bb15;" class="fas fa-chevron-right"></i>
+            <i style="color: #fea00f;" class="fas fa-chevron-right"></i>
+        </p>
+
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="card h-100">
+                        <img src="{% static 'tarefas/images/redesign/tutorialPhotos/home.jpg' %}"
+                             class="card-img-top tutorialImg" alt="buddy abroad home screen">
+                        <div class="card-body">
+                            <h5 class="card-title">Home</h5>
+                            <p class="card-text">In the Home screen you can see tours available near you and the top
+                                rated ones! Click
+                                the one that catches your attention, and find out more about it.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="card h-100">
+                        <img src="{% static 'tarefas/images/redesign/tutorialPhotos/search.jpg' %}"
+                             class="card-img-top tutorialImg" alt="buddy abroad search screen">
+                        <div class="card-body">
+                            <h5 class="card-title">Search</h5>
+                            <p class="card-text">Here you can search for the perfect tour to enjoy during your stay.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="card h-100">
+                        <img src="{% static 'tarefas/images/redesign/tutorialPhotos/tripinfo.jpg' %}"
+                             class="card-img-top tutorialImg" alt="buddy abrpad trip info screen">
+                        <div class="card-body">
+                            <h5 class="card-title">Tour</h5>
+                            <p class="card-text">After choosing the desired tour, this screen allows you to find out
+                                more about it. In
+                                this screen you can discover the tour's details such as, it's duration, group size,
+                                languages available
+                                and many more aspects of the tour.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="card h-100">
+                        <img src="{% static 'tarefas/images/redesign/tutorialPhotos/bookingsguide.jpg' %}"
+                             class="card-img-top tutorialImg"
+                             alt="buddy abroad bookings">
+                        <div class="card-body">
+                            <h5 class="card-title">Bookings</h5>
+                            <p class="card-text">In the bookings tab you are able to perceive your bookings in a well
+                                organized
+                                agenda. You can quickly see the date and time of all booked tours and find out more
+                                about them by
+                                clicking the chosen tour.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="card h-100">
+                        <img src="{% static 'tarefas/images/redesign/tutorialPhotos/create.png' %}"
+                             class="card-img-top tutorialImg" alt="buddy abroad create screen">
+                        <div class="card-body">
+                            <h5 class="card-title">Tour Creation</h5>
+                            <p class="card-text">In the Guide app you can create Tours in the create tab. Choose a title
+                                and a picture
+                                that best describe your tour and finish the creation process by filling out the rest of
+                                it's details.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="card h-100">
+                        <img src="{% static 'tarefas/images/redesign/tutorialPhotos/profile.jpg' %}"
+                             class="card-img-top tutorialImg" alt="buddy abroad profile screen">
+                        <div class="card-body">
+                            <h5 class="card-title">Profile</h5>
+                            <p class="card-text">Create your profile in the profile tab and share with the rest of the
+                                users a few
+                                words about yourself, here you can also see your rating given by the tourist or guides
+                                depending if your
+                                a Guide or a Tourist.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <a name="reviews"></a>
+    <section id="reviews">
+        <div style="text-align: center;">
+            <h2 style="font-weight: 700;">Reviews</h2>
+            <p class="mb-5">Share Your Experience
+            </p>
+        </div>
+
+        <h2 style="text-align: center;">
+            {{ averageStars }} <i class="text-warning fa fa-star"></i>
+            <span style="font-size: .67em;color: gray">{{ reviewCount }} reviews</span>
+        </h2>
+
+        <div class="container-fluid">
+            <div class="row">
+                {% for comment in comments %}
+
+                    <div style="margin-top: 5px;margin-bottom: 5px;" class="card">
+                        <div class="card-body">
+                            <h5 style="color: #feaa00" class="card-title">{{ comment.name }}
+                                <span style="margin-left: 5px; color: black" class="float-right">{{ comment.rating }} <i
+                                        class="text-warning fa fa-star"></i></span>
+                            </h5>
+                            <p class="card-text">{{ comment.comment }}</p>
+                            <small>{{ comment.postedTime }}</small>
+                        </div>
+                    </div>
+                {% endfor %}
+
+            </div>
+        </div>
+
+        <div style="text-align: center;">
+            <button onclick="location.href='{% url 'tarefas:reviews' %}'"
+                    style="padding-right: 48px;padding-left: 48px;margin-top: 10px;width: 50%;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      " class="btn btn-outline-warning addReviewbtn">See more / Write Review
+            </button>
+        </div>
+    </section>
+
+    <a name="faq"></a>
+    <section id="faq">
+        <div style="text-align: center;">
+            <h2 style="font-weight: 700;">F.A.Q</h2>
+            <p class="mb-5">How can we help you?
+            </p>
+        </div>
+        <div class="card">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne"
+                                aria-expanded="true" aria-controls="collapseOne">
+                            Where can I download Buddy Abroad?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                         data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Android App - <a href="https://play.google.com/store/apps">Google
+                            Play</a><br>iOS App - <a href="https://www.apple.com/pt/">App Store</a></div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Why should I install Buddy Abroad?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                         data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Buddy Abroad aims to provide a platform to those who are tired of
+                            conventional tours. Join our community to engage in unique and meaningful experiences
+                            whether
+                            your a guide, by creating tours on our Buddy Abroad Guide App or a tourist by Purchasing
+                            tours
+                            on our
+                            Buddy Abroad Tourist App.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Can I be a Buddy Abroad guide?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                         data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            You can! Join our guide community by installing the Buddy Abroad Guide
+                            app, filling the sign up form and start creating tours!
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            How much do I get paid as a guide?
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                         data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            You will receive 70% of the price you established for your tour. We
+                            will take care of everything for you so you can focus on the experience.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSix">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                            My question in not here
+                        </button>
+                    </h2>
+                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                         data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            No problem! You can send us a <a href="#contact">message</a>.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <a name="contact"></a>
+    <section id="contact">
+        <div style="text-align: center;">
+            <h2 style="font-weight: 700;">Contact Us</h2>
+            <p class="mb-5">Want to report a bug? Are we missing something? Tell us all about it!
+            </p>
+        </div>
+        <div style="padding: 20px;" class="card">
+            <form class="row g-3" id="contactForm" action="https://formspree.io/f/meqvkkbl" method="POST">
+                <div class="col-md-6">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" name="name" required placeholder="ex. john">
+                </div>
+                <div class="col-md-6">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" required
+                           placeholder="ex. john@mail.com">
+                </div>
+                <div class="col-12">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea rows="7" type="text" class="form-control" id="message" name="message" required
+                              placeholder="Write your message here"></textarea>
+                </div>
+                <div style="text-align: center;">
+                    <button style="width: 50%;" type="submit" class="btn contactBtn">Send</button>
+                </div>
+                <div style="margin-top: 10px" id="contactForm-status"></div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <br>
+        <p class="pText" style="text-align: center;">Talk to us on</p>
+        <p style="text-align: center;"><small><a style="text-decoration: none;color: black;" href="mailto:help.buddy.abroad@gmail.com
+      " title="Email me" rel="me" target="_blank">
+            help.buddy.abroad@gmail.com
+        </a></small></p>
+
+        <div class="container">
+            <div style="margin-bottom: 30px;" class="row row-cols-auto justify-content-center">
+                <div class="col-md-auto">
+                    <a target="_blank" rel="noopener noreferrer" title="Linkedin" href="https://www.instagram.com/">
+                        <i class="fab fa-instagram-square"></i>
+                    </a>
+                </div>
+                <div class="col-md-auto">
+                    <a target="_blank" rel="noopener noreferrer" title="GitHub" href="https://www.facebook.com/">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                </div>
+                <div class="col-md-auto">
+                    <a href="mailto:help.buddy.abroad@gmail.com" title="Email me" rel="me" target="_blank">
+                        <i class="fas fa-envelope-square"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+            direction: 'horizontal',
+            slidesPerView: 1,
+
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        });
+    </script>
+
+    <script>
+        // form handled with formspree.io API direct to target email
+        window.addEventListener("DOMContentLoaded", function () {
+            // get the form elements defined in your form HTML above
+
+            var form = document.getElementById("contactForm");
+            var status = document.getElementById("contactForm-status");
+
+            // Success and Error functions
+
+            function success() {
+                form.reset();
+                status.classList.add("success");
+                status.innerHTML = "Message Sent!";
+            }
+
+            function error() {
+                status.classList.add("error");
+                status.innerHTML = "Oops! There was a problem sending the message.";
+            }
+
+            // Handle submission event
+
+            form.addEventListener("submit", function (ev) {
+                ev.preventDefault();
+                var data = new FormData(form);
+                ajax(form.method, form.action, data, success, error);
+            });
+        });
+
+        // Function for sending an AJAX request
+
+        function ajax(method, url, data, success, error) {
+            var xhr = new XMLHttpRequest();
+            xhr.open(method, url);
+            xhr.setRequestHeader("Accept", "application/json");
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState !== XMLHttpRequest.DONE) return;
+                if (xhr.status === 200) {
+                    success(xhr.response, xhr.responseType);
+                } else {
+                    error(xhr.status, xhr.response, xhr.responseType);
+                }
+            };
+            xhr.send(data);
+        }
+    </script>
+
+{% endblock %}
+

@@ -1,0 +1,438 @@
+{% extends 'tarefas/baseBuddyAbroad.html' %}
+{% load static %}
+
+{% block main %}
+    <section style="padding-top: 60px;text-align: center;">
+        <h2>Área de Avaliação Parte 1</h2>
+        <p>Área dedicada a cumprir todos os requisitos da <strong>parte 1 do projecto</strong> não coerentes com o tema
+            do trabalho
+            <strong>(Alguma informação outdated)</strong>
+        </p>
+        <p><a href="https://buddy-abroad-web.herokuapp.com/"><strong>Link Website Parte 1</strong></a></p>
+        <p><a href="https://github.com/Tomas-a21803655/Programa-o-Web---Projeto-Fase-1-P1-Website-Responsivo"><strong>
+            Repositório Parte 1
+        </strong></a></p>
+
+    </section>
+
+    <section class="sectionStyle" style="padding: 40px;">
+        <h2>Buddy <span class="buddyGlow">Abroad</span></h2>
+        <p>O tema do projecto foi escolhido de modo a conjugar o desenvolvimento do nosso trabalho final de curso
+            com a unidade curricular "Programação Web".</p>
+    </section>
+
+    <section class="sectionStyle" style="padding: 40px;">
+        <h2>Buddy Abroad <span class="nameChanging"> App</span></h2>
+        <p style="text-align: left;">
+            A Buddy Abroad é solução mobile, constituída por duas aplicações(A de turistas
+            e a de buddies/Guias) que pretende conciliar os novos
+            padrões de consumo consequentes da nova realidade imposta pela COVID-19. Com a ausência
+            no mercado de uma aplicação de viagens capaz de ligar o desejo que os turistas têm por
+            experiências genuínas, únicas e personalizadas, com residentes locais, disponíveis e aptos para
+            satisfazer este desejo.</p>
+    </section>
+
+    <section class="sectionStyle" style="padding: 40px;">
+        <h2>Vídeo</h2>
+        <div class="videoContainer">
+            <iframe class="video" src="https://www.youtube.com/embed/AnE0oinpBoo"></iframe>
+        </div>
+    </section>
+
+    <section class="sectionStyle" style="padding: 40px;text-align: center;">
+        <figure>
+            <svg style="width: 100%;max-width: 500px;">
+                <image href="{% static 'tarefas/images/wordcloudBA.jpg' %}" width="100%" height="100%">
+                </image>
+                <a href="{% url 'tarefas:index' %}">
+                    <rect opacity="0.1" width="200" height="30" x="30%" y="30%"></rect>
+                </a>
+                <a href="{% url 'tarefas:index' %}">
+                    <rect opacity="0.1" width="200" height="10" x="30%" y="70%"></rect>
+                </a>
+            </svg>
+            <details>
+                <figcaption>Wordcloud sobre o Buddy Abroad</figcaption>
+            </details>
+        </figure>
+    </section>
+
+
+
+    <section class="sectionStyle" style="padding: 40px;">
+        <h2>Técnicas usadas</h2>
+        <p style="text-align: left;">
+            As técnicas mais usadas durante este trabalho foram o CSS Flexbox e CSS Grid, devido à sua utilidade em
+            transformar o website responsivo e de permitir uma disposição esteticamente agrádavel dos elementos.</p>
+    </section>
+
+    <section class="sectionStyle" style="padding: 40px;">
+        <h2>Layouts</h2>
+        <p style="text-align: left;">
+            Sendo o âmbito do nosso projecto desenvolver uma landing page para publicitar as nossas aplicações
+            móveis, optamos
+            por um column layout. Este layout é o mais utilizado entre os diversos layouts usados em landing pages
+            de
+            aplicações móveis.
+            <br><br>
+            No inicio do desenvolvimento deste projecto tinhamos em mente desenvolver uma single-page application
+            mas visto que não é permitido apenas uma única página nesta entrega, optamos por transformar o que iriam
+            ser as diferentes
+            secções(#sections de um .html) em páginas separadas(diversos ficheiros .html).
+        </p>
+        <figure style="text-align: center;">
+            <img src="{% static 'tarefas/images/1-col-layout.png' %}">
+            <figcaption>Column layout</figcaption>
+        </figure>
+    </section>
+
+    <section class="sectionStyle" style="padding: 40px;">
+        <h2>Mapa do website</h2>
+        <figure style="text-align: center;">
+            <img style=" width: 100%;max-width: 100%;height: auto;"
+                 src="{% static 'tarefas/images/gloomap_35d2d00a.png' %}"/>
+            <figcaption>Mapa</figcaption>
+        </figure>
+    </section>
+
+    <section class="sectionStyle" style="text-align: center;padding: 40px;">
+        <h2>Display flex para imagens</h2>
+        <div class="flexImagesContainer">
+            <figure>
+                <img class="flexBoxPhoto" src="{% static 'tarefas/images/planing.jpg' %}" alt="plans">
+                <img class="flexBoxPhoto" src="{% static 'tarefas/images/car.jpg' %}" alt="family with car">
+                <img class="flexBoxPhoto" src="{% static 'tarefas/images/airport-travel.jpg' %}" alt="airport">
+                <img class="flexBoxPhoto" src="{% static 'tarefas/images/consultant.jpg' %}" alt="guide planning">
+                <img class="flexBoxPhoto" src="{% static 'tarefas/images/eifieltower.jfif' %}" alt="eiffel tower">
+                <img class="flexBoxPhoto" src="{% static 'tarefas/images/guide.jpg' %}" alt="guide">
+                <figcaption>Contentor flex com mais de 5 items <a style="text-decoration: underline;"
+                                                                  href="https://www.istockphoto.com/pt/fotos-de-stock">source</a>
+                </figcaption>
+            </figure>
+        </div>
+    </section>
+
+
+
+    <section class="sectionStyle" style="text-align: center;padding: 40px;">
+        <h2>Tabela de inventário</h2>
+        <div class="containerInventario">
+            <table class="inventarioTable" text-align:center="" cellpadding="5%" cellspacing="2">
+
+                <thead>
+                <tr>
+                    <th>Itens</th>
+                    <th>Número</th>
+                </tr>
+                </thead>
+
+                <tbody>
+                <tr>
+                    <td style="text-align: left;">Paginas</td>
+                    <td>8</td>
+                </tr>
+
+                <tr>
+                    <td style="text-align: left;">Imagens</td>
+                    <td>24</td>
+                </tr>
+
+                <tr>
+                    <td style="text-align: left;">Links Externos</td>
+                    <td>12</td>
+                </tr>
+
+                <tr>
+                    <td style="text-align: left;">Vídeos</td>
+                    <td>1</td>
+                </tr>
+
+                <tr>
+                    <td style="text-align: left;">Animações</td>
+                    <td>2</td>
+                </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+
+
+    <section class="sectionStyle" style="text-align: center;padding: 40px;">
+        <h2>Tabela de Técnicas usadas</h2>
+        <div class="containerTecnicas">
+            <table class="tecnicasTable" text-align:center="" cellpadding="5%" cellspacing="2">
+
+                <thead>
+                <tr>
+                    <th>Carateristicas</th>
+                    <th>Elementos/técnicas</th>
+                    <th>Exemplos</th>
+
+                </tr>
+                </thead>
+
+                <tbody style="text-align: left;">
+
+                <tr>
+                    <td>Layouts</td>
+                    <td>Usámos o CSS grid e CSS flexbox para construção de layouts.</td>
+                    <td>Grid utilizado no index.html para o display do texto responsivo por cima da imagem de
+                        background. Flex utilizado em quase todas as páginas para garantir a responsividade
+                        da informação.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Responsividade</td>
+                    <td>Foram usadas media queries que adaptam o layout para telemóvel e PC consoante o tamanho
+                        da janela do browser.
+                    </td>
+                    <td>Usado na navigation bar.</td>
+                </tr>
+
+                <tr>
+                    <td>Seletores</td>
+                    <td>Foram usados seletores de *, :hover, #, >, , ::before.</td>
+                    <td>(* todos) cor de texto no index.html, (:hover) na navigation bar, (# id) saber se um
+                        input estava checked navigation bar, (> filhos) usado para selecionar os filhos de
+                        um elemento, (::before) nas animações.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Etiquetas</td>
+                    <td>HTML5 main, header, article, footer, figure...</td>
+                    <td>Main e Header em todas as páginas, footer, figure e article usados apenas quando fazem
+                        sentido.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Animações</td>
+                    <td>Foram feitas animações usando keyframes.</td>
+                    <td>Na pagina de Avaliação foram usadas para fazer a troca cíclica de nome de guide para
+                        tourist e mudança de cor do titulo buddy abroad na mesma página.
+                    </td>
+                </tr>
+
+                </tbody>
+            </table>
+        </div>
+        <section>
+            <!--
+                    <td style="text-align: center;"><i style="color: red;" class="fas fa-times"></i></td>
+
+                    <td style="text-align: center;"><i style="color: green;" class="fas fa-check"></i></td>
+
+             -->
+
+            <div class="containerReqs">
+                <table class="reqsTable" text-align:center="" cellpadding="5%" cellspacing="2">
+
+                    <thead>
+                    <tr>
+                        <th>Requisitos</th>
+                        <th>Estado</th>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+                    <tr>
+                        <td style="text-align: left;">R1. Originalidade</td>
+                        <td style="text-align: center;"><i style="color: green;" class="fas fa-check"></i></td>
+                    </tr>
+
+                    <tr>
+                        <td style="text-align: left;">R2. Proficiência</td>
+                        <td style="text-align: center;"><i style="color: green;" class="fas fa-check"></i></td>
+                    </tr>
+
+                    <tr>
+                        <td style="text-align: left;">R3. Estrutura</td>
+                        <td style="text-align: center;"><i style="color: green;" class="fas fa-check"></i></td>
+                    </tr>
+
+                    <tr>
+                        <td style="text-align: left;">R4. No GitHub e online no Heroku</td>
+                        <td style="text-align: center;"><i style="color: green;" class="fas fa-check"></i></td>
+                    </tr>
+
+                    <tr>
+                        <td style="text-align: left;">R5. HTML5</td>
+                        <td style="text-align: center;"><i style="color: green;" class="fas fa-check"></i></td>
+                    </tr>
+
+                    <tr>
+                        <td style="text-align: left;">R6. Layout CSS Grid</td>
+                        <td style="text-align: center;"><i style="color: green;" class="fas fa-check"></i></td>
+                    </tr>
+
+                    <tr>
+                        <td style="text-align: left;">R7. Layout Fluido e responsivo</td>
+                        <td style="text-align: center;"><i style="color: green;" class="fas fa-check"></i></td>
+                    </tr>
+
+                    <tr>
+                        <td style="text-align: left;">R8. Elemento head</td>
+                        <td style="text-align: center;"><i style="color: green;" class="fas fa-check"></i></td>
+                    </tr>
+
+                    <tr>
+                        <td style="text-align: left;">R9. Barra de navegação</td>
+                        <td style="text-align: center;"><i style="color: green;" class="fas fa-check"></i></td>
+                    </tr>
+
+                    <tr>
+                        <td style="text-align: left;">R10. Menu</td>
+                        <td style="text-align: center;"><i style="color: green;" class="fas fa-check"></i></td>
+                    </tr>
+
+                    <tr>
+                        <td style="text-align: left;">R11. CSS</td>
+                        <td style="text-align: center;"><i style="color: green;" class="fas fa-check"></i></td>
+                    </tr>
+
+                    <tr>
+                        <td style="text-align: left;">R12. Fonte</td>
+                        <td style="text-align: center;"><i style="color: green;" class="fas fa-check"></i></td>
+                    </tr>
+
+                    <tr>
+                        <td style="text-align: left;">R13. Cores</td>
+                        <td style="text-align: center;"><i style="color: green;" class="fas fa-check"></i></td>
+                    </tr>
+
+                    <tr>
+                        <td style="text-align: left;">R14. Imagens documentadas *</td>
+                        <td style="text-align: center;"><i style="color: green;" class="fas fa-check"></i></td>
+                    </tr>
+
+                    <tr>
+                        <td style="text-align: left;">R15. Estilização de imagens</td>
+                        <td style="text-align: center;"><i style="color: green;" class="fas fa-check"></i></td>
+                    </tr>
+
+                    <tr>
+                        <td style="text-align: left;">R16. Tamanho de Imagens</td>
+                        <td style="text-align: center;"><i style="color: green;" class="fas fa-check"></i></td>
+                    </tr>
+
+                    </tbody>
+                </table>
+
+                <table class="reqsTable" text-align:center="" cellpadding="5%" cellspacing="2">
+                    <thead>
+                    <tr>
+                        <th>Requisitos</th>
+                        <th>Estado</th>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+
+                    <tr>
+                        <td style="text-align: left;">R17. Tamanho responsivo</td>
+                        <td style="text-align: center;"><i style="color: green;" class="fas fa-check"></i></td>
+                    </tr>
+
+                    <tr>
+                        <td style="text-align: left;">R18. Display flex para imagens</td>
+                        <td style="text-align: center;"><i style="color: green;" class="fas fa-check"></i></td>
+                    </tr>
+
+                    <tr>
+                        <td style="text-align: left;">R19. Animações</td>
+                        <td style="text-align: center;"><i style="color: green;" class="fas fa-check"></i></td>
+                    </tr>
+
+                    <tr>
+                        <td style="text-align: left;">R20. Wordcloud</td>
+                        <td style="text-align: center;"><i style="color: green;" class="fas fa-check"></i></td>
+                    </tr>
+
+                    <tr>
+                        <td style="text-align: left;">R21. Icons</td>
+                        <td style="text-align: center;"><i style="color: green;" class="fas fa-check"></i></td>
+                    </tr>
+
+                    <tr>
+                        <td style="text-align: left;">R22. Efeitos em imagens</td>
+                        <td style="text-align: center;"><i style="color: green;" class="fas fa-check"></i></td>
+                    </tr>
+
+                    <tr>
+                        <td style="text-align: left;">R23. Videos e áudios</td>
+                        <td style="text-align: center;"><i style="color: green;" class="fas fa-check"></i></td>
+                    </tr>
+
+                    <tr>
+                        <td style="text-align: left;">R24. Formulário</td>
+                        <td style="text-align: center;"><i style="color: green;" class="fas fa-check"></i></td>
+                    </tr>
+
+                    <tr>
+                        <td style="text-align: left;">R25. Links</td>
+                        <td style="text-align: center;"><i style="color: green;" class="fas fa-check"></i></td>
+                    </tr>
+
+                    <tr>
+                        <td style="text-align: left;">R26. Técnicas usadas</td>
+                        <td style="text-align: center;"><i style="color: green;" class="fas fa-check"></i></td>
+                    </tr>
+
+                    <tr>
+                        <td style="text-align: left;">R27. Mapa do website</td>
+                        <td style="text-align: center;"><i style="color: green;" class="fas fa-check"></i></td>
+                    </tr>
+
+                    <tr>
+                        <td style="text-align: left;">R28. Layouts</td>
+                        <td style="text-align: center;"><i style="color: green;" class="fas fa-check"></i></td>
+                    </tr>
+
+                    <tr>
+                        <td style="text-align: left;">R29. Tabela de inventário</td>
+                        <td style="text-align: center;"><i style="color: green;" class="fas fa-check"></i></td>
+                    </tr>
+
+                    <tr>
+                        <td style="text-align: left;">R30. Tabela técnicas usadas</td>
+                        <td style="text-align: center;"><i style="color: green;" class="fas fa-check"></i></td>
+                    </tr>
+
+                    <tr>
+                        <td style="text-align: left;">R31. Video de apresentação</td>
+                        <td style="text-align: center;"><i style="color: green;" class="fas fa-check"></i></td>
+                    </tr>
+
+                    <tr>
+                        <td style="text-align: left;">R32. Anonimato</td>
+                        <td style="text-align: center;"><i style="color: green;" class="fas fa-check"></i></td>
+                    </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+            <p>*R14 Nem todas as imagens estão documentadas pois não faria sentido no tema do trabalho, (Nesta pagina
+                foram documentadas para efeito de avaliação).<br></p>
+        </section>
+    </section>
+
+    <section style="color: #feaa00;margin: 2% 5%;border-radius: 2%;">
+        <audio controls>
+            <source src="{% static 'tarefas/images/obrigado.ogg' %}" type="audio/ogg">
+            Sem suporte
+        </audio>
+        <aside style="float: right;"><i style="font-size: 50px;" class="fas fa-thumbs-up"></i></aside>
+    </section>
+
+    <footer>
+        <section style="margin-bottom: 100px;text-align: center;">
+            <p>Qualquer duvida contactar help.buddy.abroad@gmail.com </p>
+        </section>
+    </footer>
+{% endblock %}
+

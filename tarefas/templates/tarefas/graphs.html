@@ -1,0 +1,29 @@
+{% extends 'tarefas/baseBuddyAbroad.html' %}
+{% load static %}
+
+{% block main %}
+    <section style="padding-top: 60px;text-align: center;">
+        <h2>Data Base Graph Visualization</h2>
+        <p>Graphs of user forms saved data</p>
+        <small><i>side scrollable on small screens for better experience</i></small>
+    </section>
+
+    <section>
+        <h4 style="text-align: center"><a href="{% url 'tarefas:quizzAval' %}"><strong>Quizz Page</strong></a> Graph
+        </h4>
+        <div style="text-align: center">
+            {{ quizzGraph|safe }}
+        </div>
+    </section>
+
+    <br>
+    <section>
+        <h4 style="text-align: center"><a href="{% url 'tarefas:comentarios' %}"><strong>Comments</strong></a> Graph
+        </h4>
+        <div style="text-align: center">
+            {{ commentGraph|safe }}
+        </div>
+    </section>
+
+{% endblock %}
+

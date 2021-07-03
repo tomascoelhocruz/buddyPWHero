@@ -1,0 +1,35 @@
+{% extends 'tarefas/baseBuddyAbroad.html' %}
+{% load static %}
+
+{% block main %}
+
+    <section style="padding-top: 60px;text-align: center;">
+        <h2>Comentários Sobre o Trabalho</h2>
+        <p>Pagina dedicada ao requisito "Criar uma página comentários sobre o site, como especificado no lab. 3"</p>
+    </section>
+
+    <section>
+        {% if messages %}
+            <ul style=" display: block;width: 50%;border: none;background-color: green;color: white;
+            border-radius: 10px;padding: 14px 28px;font-size: 16px;text-align: center;margin: auto" class="messages">
+                {% for message in messages %}
+                    <li  {% if message.tags %} class=" {{ message.tags }} " {% endif %}> {{ message }} </li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    </section>
+
+    <section>
+        <div class="containerForm card">
+            <p>Campos cotados de 0 a 10</p>
+            <form id="quizz" action="" method="POST">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <input type="submit" value="Send" class="btn btn-success">
+            </form>
+        </div>
+    </section>
+
+
+{% endblock %}
+

@@ -1,0 +1,55 @@
+{% extends 'tarefas/baseBuddyAbroad.html' %}
+{% load static %}
+
+{% block main %}
+    <style>
+        .goQuizz {
+            display: block;
+            width: 100%;
+            border: none;
+            background-color: #feaa00;
+            color: white;
+            border-radius: 10px;
+            padding: 14px 28px;
+            font-size: 18px;
+            cursor: pointer;
+            text-align: center;
+        }
+    </style>
+
+    <section style="padding-top: 60px;text-align: center;">
+        <h2>Resultados do Quizz</h2>
+    </section>
+
+    <section class="containerForm">
+        <h4 style="text-align: center">Acertou {{ correctNumber }} de 10 respostas, obteve {{ correctNumber }}
+            pontos!</h4>
+    </section>
+
+    <section class="containerForm">
+        <h5>Correção das respostas erradas:</h5>
+        <hr>
+
+        {% for key,value in questionsAndAnswer.items %}
+            {% for field in correctThick %}
+                {% if forloop.counter == forloop.parentloop.counter %}
+                    {% if field.1 == False %}
+                        <h6>{{ key }}</h6>
+                        <p>A resposta correcta é: {{ value }}</p>
+                        <p>A sua resposta foi: {{ field.0 }}</p>
+                        <br>
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
+
+        {% endfor %}
+    </section>
+
+    <section class="containerForm">
+        <a href="{% url 'tarefas:quizzAval' %}">
+            <button type="button" class="goQuizz"> Voltar para trás</button>
+        </a>
+    </section>
+
+{% endblock %}
+

@@ -1,0 +1,158 @@
+/* styles for before redesign content */
+.sectionStyle {
+    margin: 2% 5%;
+    border-radius: 2%;
+    background-color: #f2f2f2;
+}
+
+input[type=text], input[type=email], input[type=password], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    width: 50%;
+    height: 10px;
+    background: #ffffff;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+input[type=range]:hover {
+    opacity: 1;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #feaa00;
+    cursor: pointer;
+}
+
+input[type=range]::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #feaa00;
+    cursor: pointer;
+}
+
+input[type=submit] {
+    background-color: #feaa00;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.containerForm {
+    padding: 20px;
+}
+
+/* Avaliação */
+
+.containerReqs {
+    text-align: center;
+}
+
+.reqsTable {
+    border: 1px solid rgba(0, 0, 0, 0.082);
+    background-color: rgb(255, 255, 255);
+    display: inline-block;
+}
+
+.buddyGlow {
+    color: rgb(0, 0, 0);
+    animation: colorChange 2s linear 2s infinite alternate;
+}
+
+@keyframes colorChange {
+    from {
+        color: black;
+    }
+    to {
+        color: #feaa00;
+    }
+}
+
+.nameChanging::before {
+    content: "Tourist";
+    color: #feaa00;
+    animation: nameChange 2s linear infinite alternate;
+}
+
+@keyframes nameChange {
+    from {
+        color: #feaa00;
+        content: "Tourist";
+    }
+    to {
+        color: #73ff00;
+        content: "Guide";
+    }
+}
+
+.flexImagesContainer {
+    display: flex;
+}
+
+.flexBoxPhoto {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+.containerInventario {
+    overflow-x: auto;
+    text-align: center;
+}
+
+.inventarioTable {
+    border: 1px solid rgba(0, 0, 0, 0.082);
+    background-color: rgb(255, 255, 255);
+    display: inline-block;
+}
+
+.containerTecnicas {
+    overflow-x: auto;
+    text-align: center;
+}
+
+.tecnicasTable {
+    border: 1px solid rgba(0, 0, 0, 0.082);
+    background-color: rgb(255, 255, 255);
+    display: inline-block;
+}
+
+.videoContainer {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
+}
+
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+}

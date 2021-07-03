@@ -1,0 +1,41 @@
+{% extends 'tarefas/baseBuddyAbroad.html' %}
+{% load static %}
+
+{% block main %}
+    <style>
+        input[type=tel], input[type=date] {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+        }
+    </style>
+    <section style="padding-top: 60px;text-align: center;">
+        <h2>Contact Submission</h2>
+        <p>Submit your contact for admin review</p>
+    </section>
+
+    <section>
+        {% if messages %}
+            <ul style=" display: block;width: 50%;border: none;background-color: green;color: white;
+            border-radius: 10px;padding: 14px 28px;font-size: 16px;text-align: center;margin: auto" class="messages">
+                {% for message in messages %}
+                    <li  {% if message.tags %} class=" {{ message.tags }} " {% endif %}> {{ message }} </li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    </section>
+    <section>
+        <div class="containerForm card">
+            <form id="quizz" action="" method="POST">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <input type="submit" value="Send" class="btn btn-success">
+            </form>
+        </div>
+    </section>
+{% endblock %}
+

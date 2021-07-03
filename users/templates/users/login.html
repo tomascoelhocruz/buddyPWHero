@@ -1,0 +1,30 @@
+{% extends 'tarefas/baseBuddyAbroad.html' %}
+{% load static %}
+
+{% block main %}
+
+    <section style="padding-top: 60px;text-align: center;">
+        <h2>Login</h2>
+        <p>Admin/SuperUser accounts only, has access to connect card <strong>CRUD commands</strong></p>
+        <small><i>Test Account - id: tomasadmin pass: 123</i></small>
+
+    </section>
+
+    <section class="containerForm card">
+        {% if message %}
+            <div> {{ message }} </div>
+        {% endif %}
+        <form action="{% url 'users:login' %}" method="POST">
+            {% csrf_token %}
+
+            <label for="username">User name:</label>
+            <input type="text" name="username" placeholder="username"><br>
+
+            <label for="username">Password:</label>
+            <input type="password" name="password" placeholder="password"><br>
+
+            <input type="submit" value="Login">
+        </form>
+    </section>
+
+{% endblock %}

@@ -1,0 +1,271 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 65px 0 0;
+}
+
+.navColor {
+    color: black;
+    background-color: white;
+}
+
+.bannerSection {
+    width: 100%;
+    min-height: 100vh;
+}
+
+section {
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+@media only screen and (max-width: 800px) {
+    section {
+        padding: 20px;
+    }
+}
+
+.nav-item {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.nav-item>.active {
+    font-size: large;
+}
+
+@media only screen and (min-width: 992px) {
+    .nav-item>.active {
+        color: #fff !important;
+        background: rgb(249, 187, 21);
+        background: linear-gradient(145deg, rgba(249, 187, 21, 1) 0%, rgba(255, 204, 124, 1) 100%);
+        border-radius: 15px;
+    }
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.buddyNavLogo {
+    width: 300px;
+}
+
+@media only screen and (max-width: 415px) {
+    .buddyNavLogo {
+        width: 250px;
+    }
+}
+
+@media only screen and (max-width: 354px) {
+    .buddyNavLogo {
+        width: 200px;
+    }
+}
+
+.banner-content {
+    color: black;
+    text-align: left;
+}
+
+.banner-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.banner-subtitle {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-top: 1rem;
+}
+
+.banner-uppertitle {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.banner-button {
+    background-color: #252525;
+    color: white;
+    margin-top: 2rem;
+    padding: 0.2rem 0.7rem;
+    font-size: 1.125rem;
+    cursor: pointer;
+    border-radius: 15px;
+    border: none;
+    font-weight: 400;
+}
+
+.banner-button:hover {
+    background: rgb(249, 187, 21);
+    background: linear-gradient(145deg, rgba(249, 187, 21, 1) 0%, rgba(255, 204, 124, 1) 100%);
+}
+
+.textBlock {
+    display: inline-block;
+    min-width: 570px;
+}
+
+.bannerImg {
+    display: inline-flex;
+    min-width: 570px;
+    vertical-align: middle;
+}
+
+@media only screen and (max-width: 650px) {
+    .banner-title {
+        font-size: 2.5rem;
+    }
+    .banner-subtitle {
+        font-size: 1.5rem;
+    }
+    .banner-uppertitle {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .bannerImg {
+        display: unset;
+        min-width: 0;
+        width: inherit;
+    }
+    .textBlock {
+        display: unset;
+        min-width: 0;
+    }
+}
+
+.bannerLink {
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+}
+
+.bannerLink:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.card {
+    border: none;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.aboutIcon {
+    font-size: 100px;
+    color: #feaa00;
+    text-align: center;
+}
+
+.card-title {
+    font-weight: 600;
+}
+
+.card-text {
+    text-align: left;
+}
+
+.aboutImage {
+    width: 100%;
+    height: auto;
+}
+
+.swiper-container {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+.swiper-slide>.card {
+    margin: 15px 15px 40px;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    background: var(--swiper-pagination-color, var(--swiper-theme-color));
+    background-color: #feaa00;
+}
+
+.accordion-body>a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #fff;
+    background: rgb(249, 187, 21);
+    background: linear-gradient(145deg, rgb(252, 162, 28) 0%, rgba(255, 204, 124, 1) 100%);
+    border: none;
+}
+
+#contactForm-status {
+    max-width: 500px;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+#contactForm-status.success {
+    background-color: green;
+    color: white;
+    animation: status 2s ease forwards;
+}
+
+#contactForm-status.error {
+    background-color: rgb(255, 5, 5);
+    color: white;
+    animation: status 2s ease forwards;
+}
+
+@keyframes contactForm-status {
+    0% {
+        opacity: 1;
+        pointer-events: all;
+    }
+    90% {
+        opacity: 1;
+        pointer-events: all;
+    }
+    100% {
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
+.contactBtn {
+    background-color: rgb(249, 187, 21);
+    background-color: linear-gradient(145deg, rgba(249, 187, 21, 1) 0%, rgba(255, 204, 124, 1) 100%);
+    color: white;
+}
+
+.contactBtn:hover {
+    background-color: #feaa00;
+    color: white;
+}
+
+.col-md-auto>a>i {
+    font-size: 3em;
+    color: #252525;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+@media screen and (max-width: 600px) {
+    .col-md-auto>a>i {
+        font-size: 2em;
+    }
+}
+
+.addReviewbtn:hover {
+    background-color: #feaa00;
+    color: white;
+}
+
+.dropdown-menu > li > a {
+    font-size: small;
+  white-space: normal;}

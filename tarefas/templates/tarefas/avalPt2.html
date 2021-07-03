@@ -1,0 +1,124 @@
+{% extends 'tarefas/baseBuddyAbroad.html' %}
+{% load static %}
+
+{% block main %}
+    <section style="padding-top: 60px;text-align: center;">
+        <h2>Área de Avaliação Parte 2 - 3</h2>
+        <p>Área dedicada à discussão de tópicos sobre a <strong>parte 2 - 3</strong> do trabalho
+        </p>
+    </section>
+
+
+    <section class="sectionStyle" style="padding: 40px;">
+        <h1>Buddy <span class="buddyGlow">Abroad</span></h1>
+        <p>Fun Fact: Em âmbito de trabalho final de curso, a pagina index deste website foi utilizada como suporte de
+            apresentação no pitch para o projeto
+            móvel(Android, iOS) participar no Web Summit deste ano, fomos aceites 😊.</p>
+    </section>
+
+    <section class="sectionStyle" style="padding: 40px;">
+        <h2>Técnicas Usadas</h2>
+        <br>
+        <h4>HTML e CSS</h4>
+        <p>É de notar que nesta entrega foi realizado um redesign integral da UI usando maioritariamente componentes
+            boostrap
+            adaptados com o nosso próprio css. <a href="{% url 'tarefas:aval' %}"><strong>Website antigo.</strong></a>
+        </p>
+        <p>Utilizamos um grande numero de vezes o grid do bootstrap sendo este um staple neste css framework, é super
+            util e agiliza o processo de desenvolvimento.
+            Gostamos imenso do card component do bootstrap em junção com um efeito box-shadow que criámos, utilizamos
+            este combo diversas vezes durante este projecto.</p>
+        <p>Usamos também outros componentes Bootstrap como: Navs & Tabs, Buttons, Carousel...</p>
+
+        <h4>JavaScript</h4>
+
+        <p>Na index page, na secção #contact temos um form que recorre aos serviços da <a href="https://formspree.io/">
+            formspree</a> mandando diretamente esse form para o nosso email.</p>
+
+        <p>Recorremos também ao uso da api externa <a href="https://swiperjs.com/">swiperjs</a> para os slides da
+            tutorial section.</p>
+
+        <p>Escrevemos tambem scripts que mudam o active de componentes menu, que ativam a funcionalidade SPA, e uma
+            função de suporte para a integração com a api do formspree</p>
+
+        <p>Usamos a arrow functions, AJAX e manipulações do DOM</p>
+
+        <h4>Django</h4>
+
+        <p>Utilizamos 9 models, 6 forms e um grande numero de linhas de código em python para implementar a lógica deste
+            projeto</p>
+
+    </section>
+
+    <section class="sectionStyle" style="padding: 40px;">
+        <h2>Mapa do Website</h2>
+
+        <div style="text-align: center">
+            <img style="width: 100%;height: auto;max-width: 800px" src="{% static 'tarefas/images/redesign/map.png' %}">
+        </div>
+    </section>
+
+    <section class="sectionStyle" style="padding: 40px;">
+        <h2>Tecnologias usadas</h2>
+        <br>
+        <h4>HTML</h4>
+        <p>HTML é a sigla para Hyper Text Markup Language, podemos dizer que são os ossos do nosso website. Permite que
+            os
+            utilizadores criem e estruturem secções, parágrafos,
+            cabeçalhos e links para páginas da internet ou aplicações.
+            O HTML não é uma linguagem de programação, isto significa que não pode ser usado para criar funcionalidades
+            dinâmicas. Entretanto, o HTML possibilita a organização e formatação de documentos utilizando as diversas <
+            tags > disponíveis.</p>
+        <br>
+        <h4>CSS</h4>
+        <p>CSS é a sigla para Cascading Style Sheets, podemos dizer que é a pele do nosso website. É usado para
+            estilizar
+            elementos escritos numa linguagem de marcação como HTML. O CSS separa o conteúdo da representação visual
+            do site. Utilizando o CSS é possível alterar a cor do texto e do fundo,
+            fonte e espaçamento entre parágrafos. Também pode criar tabelas, usar variações de layouts, ajustar imagens
+            e assim por diante.</p>
+
+        <br>
+        <h4>JavaScript</h4>
+        <p>JavaScript é uma linguagem de programação que permite a implementação de itens complexos por exemplo em
+            páginas web como
+            conteúdo que atualiza num intervalo de tempo, mapas interativos ou gráficos 2D/3D animados, etc. É a
+            terceira camada das tecnologias
+            padrões da web, HTML e CSS. Podemos dizer que são os músculos do nosso website</p>
+
+        <br>
+        <h4>Django</h4>
+        <p>Django é um framework para desenvolvimento rápido para web, escrito em Python, que utiliza o padrão
+            model-template-view. O Django permite agilizar o processo de desenvolvimento e reduzir os custos de
+            produção.</p>
+        <br>
+        <h4>GitHub</h4>
+        <p>GitHub é uma plataforma de hospedagem de código-fonte e arquivos com controlo de versão usando o Git. Permite
+            aos programadores e utilizadores inscritos na plataforma a contribuição em projetos
+            privados e/ou Open Source de qualquer lugar do mundo</p>
+
+        <br>
+        <h4>Heroku</h4>
+        <p>Heroku é uma plataforma em nuvem como um serviço que suporta várias linguagens de programação. Foi Uma das
+            primeiras plataformas em nuvem</p>
+
+    </section>
+
+    <section class="sectionStyle" style="padding: 40px;">
+        <h2>Vídeo P2-P3</h2>
+        <div class="videoContainer">
+            <iframe class="video" src="https://www.youtube.com/embed/AGMeHg_l5OU"></iframe>
+        </div>
+    </section>
+
+    <section class="sectionStyle" style="padding: 40px;">
+        <h2>GIF Móvel</h2>
+        <div style="text-align: center">
+            <a href="https://gyazo.com/c43875a449ddd31661f79c8ebd79e143"><img
+                    style="width: 100%;height: auto;max-width: 400px"
+                    src="https://i.gyazo.com/c43875a449ddd31661f79c8ebd79e143.gif" alt="Image from Gyazo"/></a></div>
+    </section>
+
+
+{% endblock %}
+
