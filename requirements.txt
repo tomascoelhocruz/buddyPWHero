@@ -1,0 +1,5 @@
+Django~=3.2.5
+matplotlib~=3.4.2
+numpy~=1.21.0
+environ~=1.0
+environs~=9.3.2
